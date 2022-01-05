@@ -44,15 +44,19 @@ second: runfirst:
 Let us look at few things to get up and running quickly...
 
 ## PHONY
-If your target name is matching a file/folder then it will have conflicts. So to avoid that use `.PHONY`
+If your target name is matching a file/folder then it will have conflicts. So to avoid that use `.PHONY`. In below example a folder called "clean" will have conflict. Declare a target clean as .PHONY. Now this will ensure that the recipe is run regardless of file name 'clean' 
+
 
 ## Variables
 ```
 PIP_INSTALLATION := "pip install -r"
 install:
-	@echo {PIP_INSTALLATION}
+	@echo (PIP_INSTALLATION)
 ```
 
+## Shell
+Each recepie gets executed in a seperate shell but some time you need the same sheel where you declare the enviornment variables necessary for the project. 
+To solve this use `.ONESHELL`
 
 
 
