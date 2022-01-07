@@ -101,15 +101,13 @@ data - to store all data
   * train - For training you model  
   * testing - For storing unseen data   
   * raw - original data  
-  * processed - cleaned/transformed data which can be split into train or test data  
+  * processed - cleaned/transformed data which will be split into train or test data  
 
 Readme.md - Landing page of your project which is a markdown file 
-
 ```
 
 # future support
-- Modify Makefile for virtual env
-- MKDocs & Docusaurus
+- create virtual env
 - Support for DVC & Docker
-
+- MKDocs & Docusaurus
 
