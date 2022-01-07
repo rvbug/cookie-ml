@@ -20,7 +20,7 @@ Developed in Python 3, you can use it via make or calling python script
 
 # Approches
 
-There are couple of ways you can use this project.
+There are couple of ways you can use this.
 
 1. make & Makefile  
 
@@ -48,17 +48,17 @@ make help
 Install libraries mentioned in 'requirements.txt'
 
 ```python
-`make install_libraries` 
+make install_libraries
 ``` 
 
 To create the entire struture with main folder name as *ml-project*
 ```python
-`make build` 
+make build
 ```
 
 To clean cached folders
 ```python
-`make clean`
+make clean
 ```
 
 ## Approach 2
@@ -83,20 +83,20 @@ src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py et
 
 reports - Once you clean your data, you might want extract/send the processed data to s3 or 3rd party tool   
 
-plots - store all your graphs in png/jpg format here  
+plots - All your graphs in png/jpg, can be used during your presentation, publising papers or documentation
 
 notebook - All your jupyter notebooks which is used during your experiement/research phase   
  * research - to store all your artifacts, notes, links. It will be used later below
  * model - to store your params, model during your expermient phase
  * project_name_EDA_ML_Experiements.ipynb - filename is same as project name passed via arguments in approach 2
- * project_name.ipynb - Final code lives here. For more info on structuring your DS and ML project, read my blog `here`
+ * project_name.ipynb - Final code lives here. 
  * data - contains all the data
  
 models - to store all the models you have trained with many hyper paramaters  
 
 logs - stores the application log, this can be used consumed by tools Promethus and Grafana  
 
-docs - in *4.1* you had stored your artifacts, it could be used to create beautiful docs  
+docs - during your research above, all your artifacts can be used to create beautiful docs  
 
 data - to store all data   
   * train - For training you model  
