@@ -80,4 +80,6 @@ The project structure looks complicated, but is quite simple
 # future support
 - Modify Makefile for virtual env
 - MKDocs & Docusaurus
+- Support for DVC
+- Docker
 
