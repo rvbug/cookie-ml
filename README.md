@@ -72,9 +72,18 @@ python template.py ml-project
 
 # Project Structure
 
-The project structure looks complicated, but is quite simple
+The project structure looks complicated, but is quite simple actually
 <img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree-structure.png" />
 
+## Folders
+```swift
+1 - src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py etc
+2 - reports - Once you clean your data, you might want extract/send the processed data to s3 or 3rd party tool 
+3 - plots - store all your graphs in png/jpg format here
+4 - notebook - when you are working in an experiement phase, you would have used jupyter notebook - it goes here
+   - 4.1 
+
+```
 
 
 # future support
