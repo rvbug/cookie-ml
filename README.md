@@ -10,7 +10,7 @@ Do visit my article[] and leave a feedback.
 You have trained your model using `jupyter notebook` / `vscode` / `pycharm`.   
 Getting your code into production is a whole new challenge unlike any other you have done before.  
 
-It is chaotic but has a stucture to it. 
+It is chaotic but that is the beauty of it
 
 # About this project
 
