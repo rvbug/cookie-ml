@@ -1,6 +1,11 @@
 # Introduction
 
-If you want to start a new DS or ML project or ready to move to productionise the code from Jupyter notebook, then you can use this cookie-ml to create your own custom folders
+You have trained your model and seems to be pretty satisfied. This could be in a `jupyter notebook` or `vscode` or `pycharm`.
+
+While it is the time to move your code into production, there is a need for a struture and order of your project. 
+
+
+
 
 Run the following command
 
