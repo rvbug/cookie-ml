@@ -19,6 +19,8 @@ If you already know about makefile or just want to create the folder directly
 But if you would like to know more about **make** and **Makefile** visit my blog :-
 
 
+# struture
+<img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree-structure.png" />
 
 
 
