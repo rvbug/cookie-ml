@@ -35,11 +35,12 @@ There are couple of ways you can use this project.
 `make` runs the scripts mentioned in `Makefile`
 
 Once you clone this repo, call `make` from command line, by default it will show all the arguments you can use
-<img src="">
+<p>
+<img src="https://github.com/rvbug/cookie-ml/blob/main/make.png">
 
 The order of execution is as follows :
 
-To see the arguments
+To see the arguments as above 
 ```python
 make help
 ```
