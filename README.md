@@ -75,20 +75,41 @@ python template.py ml-project
 The project structure looks complicated, but is quite simple actually
 <img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree-structure.png" />
 
-## Folders
-```swift
-1 - src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py etc
-2 - reports - Once you clean your data, you might want extract/send the processed data to s3 or 3rd party tool 
-3 - plots - store all your graphs in png/jpg format here
-4 - notebook - when you are working in an experiement phase, you would have used jupyter notebook - it goes here
-   - 4.1 
+# `remove folder under notebook folder, Makefile  Docker`
 
 ```
+src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py etc  
 
+reports - Once you clean your data, you might want extract/send the processed data to s3 or 3rd party tool   
+
+plots - store all your graphs in png/jpg format here  
+
+notebook - All your jupyter notebooks which is used during your experiement/research phase   
+ * research - to store all your artifacts, notes, links. It will be used later below
+ * model - to store your params, model during your expermient phase
+ * project_name_EDA_ML_Experiements.ipynb - filename is same as project name passed via arguments in approach 2
+ * project_name.ipynb - Final code lives here. For more info on structuring your DS and ML project, read my blog `here`
+ * data - contains all the data
+ 
+models - to store all the models you have trained with many hyper paramaters  
+
+logs - stores the application log, this can be used consumed by tools Promethus and Grafana  
+
+docs - in *4.1* you had stored your artifacts, it could be used to create beautiful docs  
+
+data - to store all data   
+  * train - For training you model  
+  * testing - For storing unseen data   
+  * raw - original data  
+  * processed - cleaned/transformed data which can be split into train or test data  
+
+Readme.md - Landing page of your project which is a markdown file 
+
+```
 
 # future support
 - Modify Makefile for virtual env
 - MKDocs & Docusaurus
-- Support for DVC
-- Docker
+- Support for DVC & Docker
+
 
