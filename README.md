@@ -16,7 +16,7 @@ It is chaotic but that is the beauty of it
 
 Helps you to build a project struture easily and is quite flexible.  
 Developed in Python 3, you can use it via make or calling python script
-
+Most importantly, it is extremely simple to use!
 
 # Approches
 
