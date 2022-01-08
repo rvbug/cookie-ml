@@ -73,7 +73,7 @@ python template.py ml-project
 # Project Structure
 
 The project structure looks complicated, but is quite simple actually
-<img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree-structure.png" />
+<img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree.png" />
 
 ```
 Folder src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py etc  
