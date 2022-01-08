@@ -29,7 +29,7 @@ There are couple of ways you can use this.
 
 ## Approach 1
 
-*`make`* is a utility and a very popluar for automating your compilation of C/C++ programs and their dependencies.
+*`make`* is a utility and a very popluar for automating the compilation of C/C++ programs and their dependencies.
 
 
 `make` runs the scripts mentioned in `Makefile`
