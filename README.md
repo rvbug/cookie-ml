@@ -1,21 +1,20 @@
 # Preface
 
-I am working on introduction to **make** and **Makefile**, which I share it shortly :-
+>Currently working on quick guide to **make**, **Makefile** and other tools like virtualenv just enough to quickly get your running at full speed.
+I will be share it shortly
 
-Do visit my article[] and leave a feedback.
 
 # Introduction
 
 
-You have trained your model using `jupyter notebook` / `vscode` / `pycharm`.   
-Getting your code into production is a whole new challenge unlike any other you have done before.  
-
+>You have trained your model using `jupyter notebook` / `vscode` / `pycharm`.   
+Getting your code into production is a whole new challenge unlike any other you have done before.    
 It is chaotic but that is the beauty of it
 
 # About this project
 
-Helps you to build a project struture easily and is quite flexible.  
-Developed in Python 3, you can use it via make or calling python script
+> Helps you to build a project struture easily and is quite flexible.  
+Developed in Python 3, you can use it via make or calling python script  
 Most importantly, it is extremely simple to use!
 
 # Approches
@@ -29,41 +28,56 @@ There are couple of ways you can use this.
 
 ## Approach 1
 
-*`make`* is a utility and a very popluar for automating the compilation of C/C++ programs and their dependencies.
+### Prerequisites
+ The prerequisites is to have a virtual env created. There are 3 ways which can be done
+ 
+ - **`conda`** - easier but works well but only during experiemental phase of your project
+ - **`virtualenv`** - was popular once and works well with *pip*
+ - **`pipenv`** - is the most prefered method as it commbines `pip` & `virtualenv` 
+  
+<br>
+          
+> Once you activate the virtual env, follow the below steps :-
+<br>
 
+*`make`* is a utility and a very popluar for automating the compilation of C/C++ programs and their dependencies.
 
 `make` runs the scripts mentioned in `Makefile`
 
-Once you clone this repo, call `make` from command line, by default it will show all the arguments you can use
+After you clone this repo, call `make` from command line, by default it will show all the arguments you can use
 <p>
 <img src="https://github.com/rvbug/cookie-ml/blob/main/make.png">
 
-The order of execution is as follows :
 
-To see the arguments as above 
+> To get help use
 ```python
 make help
-```
+```          
+          
+#### The order of execution is as follows :
 
-Install libraries mentioned in 'requirements.txt'
+> **Install libraries mentioned in `requirements.txt`**
 
 ```python
 make install_libraries
 ``` 
 
-To create the entire struture with main folder name as *ml-project*
+> **To create the entire struture with main folder name as `ml-project`**
 ```python
 make build
 ```
 
-To clean cached folders
+> **To clean cached folders**
 ```python
 make clean
 ```
 
 ## Approach 2
 
-If you want a simpler route, just use the below command for creating the folder of your choice
+### Prerequisites
+  The only prerequisites is to have python 3.x installed
+
+> If you want a simpler route, just use the below command for creating the folder of your choice
 folder_name is a required parameter and can be given any name as long as that folder does not exists.
 
 ```python
@@ -72,10 +86,10 @@ python template.py ml-project
 
 # Project Structure
 
-The project structure looks complicated, but is quite simple actually
+> The project structure looks complicated, but is quite simple actually
 <img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree.png" />
 
-```
+ ```HTML
 Folder src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py etc  
 
 Folder reports - Once you clean your data, you might want extract/send the processed data to s3 bucket.
