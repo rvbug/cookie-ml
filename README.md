@@ -70,45 +70,51 @@ folder_name is a required parameter and can be given any name as long as that fo
 python template.py ml-project
 ```
 
-
 # Project Structure
 
 The project structure looks complicated, but is quite simple actually
 <img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree-structure.png" />
 
-# `remove folder under notebook folder, Makefile  Docker`
-
 ```
-src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py etc  
+Folder src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py etc  
 
-reports - Once you clean your data, you might want extract/send the processed data to s3 or 3rd party tool   
+Folder reports - Once you clean your data, you might want extract/send the processed data to s3 bucket.
+          It can then been consumed by 3rd party tools for further analysis/visualization  
 
-plots - All your graphs in png/jpg, can be used during your presentation, publising papers or documentation
+Folder plots - Graphs(png/jpg). This can be used for presentation/publising papers/documentation
 
-notebook - All your jupyter notebooks which is used during your experiement/research phase   
- * research - to store all your artifacts, notes, links. It will be used later below
- * model - to store your params, model during your expermient phase
- * project_name_EDA_ML_Experiements.ipynb - filename is same as project name passed via arguments in approach 2
- * project_name.ipynb - Final code lives here. 
- * data - contains all the data
+params.yaml - YAML file for storing configuration
  
-models - to store all the models you have trained with many hyper paramaters  
+Folder notebook - All your jupyter notebooks which is used during your experiement/research phase   
+ * Sub folder research - to store all your artifacts, notes, reference links. 
+   * project_name_EDA_ML_Experiements.ipynb - filename is same as `project name`
+ * Sub folder nb_report - Stores all your sample reports 
+ 
+ * Sub folder nb_model - to store your params, model during your expermient phase
+  
+ * project_name.ipynb - Final clean code lives here. 
+ * data - folder contains all the data used during your experiements.
+ 
+models - to store all the models you would have trained with lots of hyper params  
 
-logs - stores the application log, this can be used consumed by tools Promethus and Grafana  
+logs - stores the application log, this can be used consumed by tools e.g Promethus/Grafana  
 
-docs - during your research above, all your artifacts can be used to create beautiful docs  
+docs - for building documentation - all your artifacts can be used for creating beautiful documentation
+       You can use MKDocs / Docusaurus or similar static website generator for project documentation
 
-data - to store all data   
+data - to store data   
   * train - For training you model  
   * testing - For storing unseen data   
   * raw - original data  
   * processed - cleaned/transformed data which will be split into train or test data  
 
 Readme.md - Landing page of your project which is a markdown file 
+Makefile - To automate your script and it's dependencies if you are going to use it
+
 ```
 
 # future support
 - create virtual env
-- Support for DVC & Docker
+- Support for DVC 
 - MKDocs & Docusaurus
 
