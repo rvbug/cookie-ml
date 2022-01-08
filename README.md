@@ -29,11 +29,11 @@ There are couple of ways you can use this.
 ## Approach 1
 
 ### Prerequisites
- The prerequisites is to have a virtual env created. There are 3 ways which can be done
+ The prerequisites is to have a virtual environment created. There are 3 ways which can be done
  
- - **`conda`** - easier but works well but only during experiemental phase of your project
+ - **`conda`** - easier but works well but only during experimental phase of your project
  - **`virtualenv`** - was popular once and works well with *pip*
- - **`pipenv`** - is the most prefered method as it commbines `pip` & `virtualenv` 
+ - **`pipenv`** - is the most preferred method as it combines `pip` & `virtualenv`  
   
 <br>
           
@@ -89,27 +89,28 @@ python template.py ml-project
 > The project structure looks complicated, but is quite simple actually
 <img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree.png" />
 
- ```HTML
-Folder src - Most of your code lives here e.g. main.py, preprocess.py, visualizer.py etc  
+```
+src - Most of your code lives in this folder e.g. main.py, preprocess.py, visualizer.py etc  
 
-Folder reports - Once you clean your data, you might want extract/send the processed data to s3 bucket.
-          It can then been consumed by 3rd party tools for further analysis/visualization  
+reports - All reports are stored here after data processing/cleaning.   
+You might want send these to s3 bucket to be consumed by 3rd party visualization tools for further analysis. 
+It can also store reports (xlsx, csv format) to be sent at regular intervals
 
-Folder plots - Graphs(png/jpg). This can be used for presentation/publising papers/documentation
+plots - Storing graphs(png/jpg). This can be used for presentation/publishing papers/documentation
 
-params.yaml - YAML file for storing configuration
+params.yaml - YAML file for storing configurations
  
-Folder notebook - All your jupyter notebooks which is used during your experiement/research phase   
- * Sub folder research - to store all your artifacts, notes, reference links. 
-   * project_name_EDA_ML_Experiements.ipynb - filename is same as `project name`
- * Sub folder nb_report - Stores all your sample reports 
- 
- * Sub folder nb_model - to store your params, model during your expermient phase
+notebook - Stores all your jupyter notebooks which is used during your experiment/research phase   
+  research - to store all your artifacts, notes, reference links. 
+      project_name_EDA_ML_Experiments.ipynb - filename is same as `project name`
+  nb_report - Storing all your sample reports 
+
+  nb_model - For storing your params, model during your experiment phase 
+  project_name.ipynb - Final clean code lives here. 
   
- * project_name.ipynb - Final clean code lives here. 
- * data - folder contains all the data used during your experiements.
- 
-models - to store all the models you would have trained with lots of hyper params  
+  data - folder contains all the data used during your experiments.
+
+models - to store all the models you would have trained with lots of hyper params   
 
 logs - stores the application log, this can be used consumed by tools e.g Promethus/Grafana  
 
@@ -117,17 +118,16 @@ docs - for building documentation - all your artifacts can be used for creating 
        You can use MKDocs / Docusaurus or similar static website generator for project documentation
 
 data - to store data   
-  * train - For training you model  
-  * testing - For storing unseen data   
-  * raw - original data  
-  * processed - cleaned/transformed data which will be split into train or test data  
+    train - For training you model  
+    testing - For storing unseen data   
+    raw - original data  
+    processed - cleaned/transformed data which will be split into train or test data  
 
 Readme.md - Landing page of your project which is a markdown file 
 Makefile - To automate your script and it's dependencies if you are going to use it
-
 ```
 
-# future support
+# Future support
 - create virtual env
 - Support for DVC 
 - MKDocs & Docusaurus
