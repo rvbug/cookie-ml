@@ -1,5 +1,5 @@
-import os
 import argparse
+import os
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -18,29 +18,27 @@ if __name__ == "__main__":
         os.path.join("data", "train"),
         os.path.join("data", "test"),
         "notebook",
-        os.path.join("notebook", "data"),
-        os.path.join("notebook", "report"),
-        os.path.join("notebook", "model"),
+        os.path.join("notebook", "nb_data"),
+        os.path.join("notebook", "nb_report"),
+        os.path.join("notebook", "nb_model"),
         os.path.join("notebook", "research"),
         "models",
-        "src" ,
+        "src",
         "docs",
     ]
 
     files = [
-        "README1.md",
+        "README.md",
         "Makefile",
         "reports",
         "logs",
         "plots",
         "params.yaml",
         ".gitignore",
-        "Dockerfile",
         os.path.join("src", "__init__.py"),
-        os.path.join("notebook", f"{project_name}_EDA_ML_Experiements.ipynb"),
+        os.path.join("notebook", f"{project_name}_EDA_ML_Experiments.ipynb"),
         os.path.join("notebook", f"{project_name}.ipynb"),
-        os.path.join("notebook", "research"+"/"+f"{project_name}_papers.ipynb"),
-
+        os.path.join("notebook", "research" + "/" + f"{project_name}_EDA_ML_Experiments.ipynb"),
     ]
 
     for _dir_ in dirs:
