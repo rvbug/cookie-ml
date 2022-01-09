@@ -103,11 +103,11 @@ plots - Storing graphs(png/jpg). This can be used for presentation/publishing pa
 params.yaml - YAML file for storing configurations
  
 notebook - Stores all your jupyter notebooks which is used during your experiment/research phase   
-  nb_research - to store all your artifacts, notes, reference links. 
-      project_name_EDA_ML_Experiments.ipynb - filename is same as `project name`
-  nb_report - Storing all your sample reports 
-
-  nb_model - For storing your params, model during your experiment phase 
+  nb_research - to store all your artifacts, notes, reference links.  
+  nb_report - Storing all your sample reports   
+  nb_model - For storing your params, model during your experiment phase  
+  nb_data - Folder contains all the data used during your experiments.
+  project_name_EDA_ML_Experiments.ipynb - filename is same as `project name`
   project_name.ipynb - Final clean code lives here. 
   
   data - folder contains all the data used during your experiments.
