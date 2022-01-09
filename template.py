@@ -21,7 +21,7 @@ if __name__ == "__main__":
         os.path.join("notebook", "nb_data"),
         os.path.join("notebook", "nb_report"),
         os.path.join("notebook", "nb_model"),
-        os.path.join("notebook", "research"),
+        os.path.join("notebook", "nb_research"),
         "models",
         "src",
         "docs",
@@ -34,11 +34,10 @@ if __name__ == "__main__":
         "logs",
         "plots",
         "params.yaml",
-        ".gitignore",
+        "requirements.txt",
         os.path.join("src", "__init__.py"),
         os.path.join("notebook", f"{project_name}_EDA_ML_Experiments.ipynb"),
-        os.path.join("notebook", f"{project_name}.ipynb"),
-        os.path.join("notebook", "research" + "/" + f"{project_name}_EDA_ML_Experiments.ipynb"),
+        os.path.join("notebook", f"{project_name}.ipynb")
     ]
 
     for _dir_ in dirs:
