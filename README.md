@@ -91,6 +91,8 @@ python template.py ml-project
 
 ```
 src - Most of your code lives in this folder e.g. main.py, preprocess.py, visualizer.py etc  
+requirements.txt - If you use `conda` or `virtualenv` to  install ML libraries then update this file but if you 
+prefer `pipenv` then replace it with Pipfile. Will be supporting this in the next release.
 
 reports - All reports are stored here after data processing/cleaning.   
 You might want send these to s3 bucket to be consumed by 3rd party visualization tools for further analysis. 
