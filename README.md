@@ -87,7 +87,7 @@ python template.py ml-project
 # Project Structure
 
 > The project structure looks complicated, but is quite simple actually
-<img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree.png" />
+<img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree-structure.png" />
 
 ```
 src - Most of your code lives in this folder e.g. main.py, preprocess.py, visualizer.py etc  
@@ -103,7 +103,7 @@ plots - Storing graphs(png/jpg). This can be used for presentation/publishing pa
 params.yaml - YAML file for storing configurations
  
 notebook - Stores all your jupyter notebooks which is used during your experiment/research phase   
-  research - to store all your artifacts, notes, reference links. 
+  nb_research - to store all your artifacts, notes, reference links. 
       project_name_EDA_ML_Experiments.ipynb - filename is same as `project name`
   nb_report - Storing all your sample reports 
 
