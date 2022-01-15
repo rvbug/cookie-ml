@@ -134,4 +134,7 @@ Makefile - To automate your script and it's dependencies if you are going to use
 - Support for DVC 
 - Docker
 - MKDocs & Docusaurus
-
+- Adding files under src
+   - main.py
+   - __init__.py
+   - preprocessing.py
