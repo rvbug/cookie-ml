@@ -1,7 +1,7 @@
 # Preface
 
 >Currently working on quick guide to **make**, **Makefile** and other tools like virtualenv just enough to quickly get your running at full speed.
-I will be share it shortly
+I will be sharing it shortly
 
 
 # Introduction
