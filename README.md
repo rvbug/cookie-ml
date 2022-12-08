@@ -131,7 +131,7 @@ Makefile - To automate your script and it's dependencies if you are going to use
 
 # Future support
 - create virtual env
-- Support for DVC 
+- Support for DVC, MLFlow & Tensorboard
 - Docker
 - MKDocs & Docusaurus
 - Installation mode
