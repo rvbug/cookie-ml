@@ -130,7 +130,7 @@ Makefile - To automate your script and it's dependencies if you are going to use
 ```
 
 # Future support
-- create virtual env
+- create virtual env (In progress)
 - Support for DVC, MLFlow & Tensorboard
 - Docker
 - MKDocs & Docusaurus
