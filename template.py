@@ -1,5 +1,5 @@
 import argparse
-import os
+import os, subprocess
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -47,4 +47,13 @@ if __name__ == "__main__":
     for _file_ in files:
         with open(_file_, "w") as f:
             pass
+
     print("folder structure created.. happy coding!!")
+    print("creating virtual env")
+
+    # create virtualenv if we have it installed 
+    # virtualenv --version should return a value
+    os.chdir('../')
+    os.chdir(f"{project_name}")
+    #subprocess.run(["ls", "-l"])
+    subprocess.run(["python3", "-m", "venv", "venv"])
