@@ -48,3 +48,10 @@ if __name__ == "__main__":
         with open(_file_, "w") as f:
             pass
     print("folder structure created.. happy coding!!")
+    
+       print("creating virtual env")
+
+    # will install the virtualenv
+    os.chdir('../')
+    os.chdir(f"{project_name}")
+    subprocess.run(["python3", "-m", "venv", "venv"])
