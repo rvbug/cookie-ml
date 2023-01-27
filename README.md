@@ -131,6 +131,8 @@ Makefile - To automate your script and it's dependencies if you are going to use
 
 # Future support
 - create virtual env (In progress)
+- Add new folders - conf/ and validate under data
+- Add .gitignore file
 - Support for DVC, MLFlow & Tensorboard
 - Docker
 - MKDocs & Docusaurus
