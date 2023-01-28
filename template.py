@@ -12,6 +12,7 @@ if __name__ == "__main__":
     os.mkdir(project_name)
     os.chdir(f"{project_name}")
 
+    # creation of directories
     dirs = [
         os.path.join("data", "raw"),
         os.path.join("data", "processed"),
@@ -29,6 +30,7 @@ if __name__ == "__main__":
         "conf"
     ]
 
+    ## creation of files
     files = [
         "README.md",
         "Makefile",
