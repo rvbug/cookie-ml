@@ -17,6 +17,7 @@ if __name__ == "__main__":
         os.path.join("data", "processed"),
         os.path.join("data", "train"),
         os.path.join("data", "test"),
+        os.path.join("data", "validate"),
         "notebook",
         os.path.join("notebook", "nb_data"),
         os.path.join("notebook", "nb_report"),
@@ -25,6 +26,7 @@ if __name__ == "__main__":
         "models",
         "src",
         "docs",
+        "conf"
     ]
 
     files = [
@@ -35,6 +37,9 @@ if __name__ == "__main__":
         "plots",
         "params.yaml",
         "requirements.txt",
+        ".gitignore",
+        os.path.join("conf", "params.yaml"),
+        os.path.join("conf", "conf.yaml"),
         os.path.join("src", "__init__.py"),
         os.path.join("notebook", f"{project_name}_EDA_ML_Experiments.ipynb"),
         os.path.join("notebook", f"{project_name}.ipynb")
@@ -53,7 +58,6 @@ if __name__ == "__main__":
 
     # create virtualenv if we have it installed 
     # virtualenv --version should return a value
-    os.chdir('../')
-    os.chdir(f"{project_name}")
-    #subprocess.run(["ls", "-l"])
-    subprocess.run(["python3", "-m", "venv", "venv"])
+    #os.chdir('../')
+    #os.chdir(f"{project_name}")
+    #subprocess.run(["python3", "-m", "venv", "venv"])
