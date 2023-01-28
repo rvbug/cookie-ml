@@ -1,0 +1,31 @@
+dir:
+  - data:
+      - raw
+      - processed
+      - train
+      - test
+      - validate
+  - plot
+  - logs
+  - reports
+  - docs
+  - models
+
+  - conf:
+    - params.yaml
+    - conf.yaml
+
+  - notebook:
+    - nb_data
+    - nb_report
+    - nb_model
+    - nb_research
+  - notebook_file:
+    - eda_ml_experiment.ipynb
+    - project_name.ipynb
+
+  - files:
+    - README.md
+    - Makefile
+    - requirements.txt
+    - .gitignore

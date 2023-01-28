@@ -1,5 +1,7 @@
 import argparse
-import os, subprocess
+import yaml
+
+# import os, subprocess
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -12,6 +14,8 @@ if __name__ == "__main__":
     os.mkdir(project_name)
     os.chdir(f"{project_name}")
 
+    # read YAML file
+
     # creation of directories
     dirs = [
         os.path.join("data", "raw"),
@@ -20,24 +24,23 @@ if __name__ == "__main__":
         os.path.join("data", "test"),
         os.path.join("data", "validate"),
         "notebook",
-        os.path.join("notebook", "nb_data"),
+        # os.path.join("notebook", "nb_data"),
         os.path.join("notebook", "nb_report"),
         os.path.join("notebook", "nb_model"),
         os.path.join("notebook", "nb_research"),
         "models",
         "src",
         "docs",
-        "conf"
+        "conf",
+        "reports",
+        "logs",
+        "plots"
     ]
 
     ## creation of files
     files = [
         "README.md",
         "Makefile",
-        "reports",
-        "logs",
-        "plots",
-        "params.yaml",
         "requirements.txt",
         ".gitignore",
         os.path.join("conf", "params.yaml"),
@@ -60,6 +63,6 @@ if __name__ == "__main__":
 
     # create virtualenv if we have it installed 
     # virtualenv --version should return a value
-    #os.chdir('../')
-    #os.chdir(f"{project_name}")
-    #subprocess.run(["python3", "-m", "venv", "venv"])
+    # os.chdir('../')
+    # os.chdir(f"{project_name}")
+    # subprocess.run(["python3", "-m", "venv", "venv"])
