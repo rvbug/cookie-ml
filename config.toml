@@ -1,0 +1,5 @@
+directories = [
+  "sample-dir1",
+  "sample-dir2",
+  ["sample-dir2", "sub-dir1"],
+]
