@@ -57,15 +57,15 @@ Readme.md - Landing page of your project which is a markdown file
 Makefile - To automate your script and it's dependencies if you are going to use it
 ```
 
-# Future support
-- create virtual env (In progress)
-- Add new folders - conf/ and validate under data
-- Add .gitignore file
-- Support for DVC, MLFlow & Tensorboard
-- Docker
-- MKDocs & Docusaurus
-- Installation mode
-- Adding files under src
-   - main.py
-   - __init__.py
-   - preprocessing.py
+
+
+# Reference 
+- [Real Python](https://realpython.com/)  
+- [Virtual Env](https://docs.python.org/3/library/venv.html)
+- [YAML](https://yaml.org/)  
+- [Data Version Control](https://dvc.org/)    
+- [Dags Hub](https://dagshub.com/)  
+- [Jupyter Notebook](https://jupyter.org/)  
+- [Docker](https://www.docker.com/)  
+  
+  
