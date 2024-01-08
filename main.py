@@ -7,6 +7,12 @@ import venv
 
 
 def parse_args():
+    """
+    Parses command-line arguments using argparse.
+
+    Returns:
+        argparse.Namespace: An object containing parsed arguments.
+    """
     # attach arg specs to the parser
     parser = argparse.ArgumentParser(
         prog='ML Cookie Cutter',
@@ -17,7 +23,6 @@ def parse_args():
                         help="Name of the directory to be created, default = ml-cookie-project", required=False)
     parser.add_argument("--p", "--path", help="provide the path where, default is $HOME dir")
     parser.add_argument("--c", "--config", help="specify your own config file", required=False)
-    parser.add_argument("--d", "--dockerfile", help="Use Docker & create DockerFile. [You need to install docker]")
     parser.add_argument("--v", "--venv", action="store_true", help="create a virtual env. "
                                                                    "[ignore if you are already on a virtual env]",
                         required=False)
@@ -26,6 +31,19 @@ def parse_args():
 
 
 def load_config(config_file="./config.yaml"):
+    """
+        Loads a configuration from a YAML file.
+
+        Args:
+            config_file (str, optional): Path to the configuration file. Defaults to "./config.yaml".
+
+        Returns:
+            dict: The parsed configuration dictionary.
+
+        Raises:
+            FileNotFoundError: If the specified configuration file is not found.
+        """
+
     # check if the file is provided by the user if it exists
     if not os.path.exists(config_file):
         raise FileNotFoundError(f"f config file not found :{config_file}")
@@ -35,6 +53,13 @@ def load_config(config_file="./config.yaml"):
 
 
 def create_virtual_env(project_path, activate=True):
+    """
+    Creates a virtual environment within the specified project directory.
+
+    Args:
+        project_path (str): The root path of the project.
+        activate (bool, optional): True to print activation instructions, False otherwise. Defaults to True.
+    """
     venv_path = os.path.join(project_path, "venv")
     print("virtual env path is ", venv_path)
     if not os.path.exists(venv_path):
@@ -45,6 +70,14 @@ def create_virtual_env(project_path, activate=True):
 
 
 def create_directories(project_path, config):
+    """
+        Creates directories and files based on the provided configuration.
+
+        Args:
+            project_path (str): The root path for the project directory.
+            config (str, list, or dict): The configuration structure for directories and files.
+        """
+
     if isinstance(config, str):
         item_path = os.path.join(project_path, config)
         with open(item_path, "w"):
@@ -68,16 +101,14 @@ def create_directories(project_path, config):
 def main():
     # parse the arguments provided on the command line
     args = parse_args()
-    # either config file is in the argument or default as "config.yaml"
-    config = load_config() if args.c is None else load_config(args.c)
 
+    # config = load_config() if args.c is None else load_config(args.c)
+    config = load_config()
     # either project name is in the argument or default as "ml-cookie-cuter
     project_name = args.n or "ml-cookie-cutter"
     project_path = args.p or os.environ["HOME"]
 
     project_path = os.path.join(project_path, project_name) if project_path else project_name
-
-    create_directories(project_path, config)
 
     # # all print stuff here for debugging
     # print("args is ", args)
@@ -85,6 +116,8 @@ def main():
     # print("project_path is ", project_path)
     # print("config is ", config)
 
+    create_directories(project_path, config)
+    print("ML directory structure created at :- ", project_path)
     # create venv if user requests it
     if args.v:
         create_virtual_env(project_path)
