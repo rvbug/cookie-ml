@@ -1,5 +1,71 @@
-directories = [
-  "sample-dir1",
-  "sample-dir2",
-  ["sample-dir2", "sub-dir1"],
+dvc = []
+
+# If you plan to use a Docker container
+docker = ["Dockerfile"]
+
+# Basic ML development files
+src = [
+  "__init__.py",
+  "data_pipeline.py",
+  "data_processing.py",
+  "feature_engineering.py",
+  "model_training.py",
+  "evaluation.py",
+  "utils.py",
+]
+
+# Unit testing
+tests = []
+
+# Data directories
+data = [
+  "raw",
+  "processed",
+  "train",
+  "test",
+  "validate",
+]
+
+# Plot directory
+plot = []
+
+# Logs directory
+logs = []
+
+# Documentation directory
+docs = []
+
+# Model directory
+models = []
+
+# Configuration files
+conf = [
+  "hyperparams.yaml",
+  "conf.yaml",
+  "dagshub.yaml",
+]
+
+# Notebook directory
+.notebook = [
+  "nb_data",
+  "nb_report",
+  "nb_model",
+  "nb_documentation",
+  [
+    "notebook_file",
+    [
+      "eda_ml_experiment.ipynb",
+      "project_name.ipynb",
+    ],
+  ],
+]
+
+# Additional files
+files = [
+  "setup.py",
+  "README.md",
+  "Makefile",
+  "requirements.txt",
+  ".gitignore",
+  "LICENSE",
 ]

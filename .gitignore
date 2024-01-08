@@ -1,3 +1,7 @@
 .idea/
 venv/
 .DS_Store
+config.toml
+test.py
+template.py
+tree-structure.png

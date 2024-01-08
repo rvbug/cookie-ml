@@ -1,4 +1,4 @@
-directory:
+
   # support for data version control
   - .dvc:
 
@@ -37,6 +37,8 @@ directory:
 
 # storing all your research and documentation
   - docs:
+
+# model folder considering all models being tested
   - models:
 
 # model config files
