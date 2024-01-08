@@ -10,10 +10,12 @@ I use a specific ML project structure. It helps me focus on getting started imme
 This is extemely simple to use command line script.
 
 
-# Project Structure
+# Project directories
 
-> The project structure looks complicated, but is quite simple actually
-<img width="100%" src="https://github.com/rvbug/cookie-ml/blob/main/tree-structure.png" />
+The project structure is quite simple actually
+![image](https://github.com/rvbug/cookie-ml/assets/10928536/47c04701-19f1-44f5-a7f4-2a56f5fad4d3)
+
+
 
 ```
 src - Most of your code lives in this folder e.g. main.py, preprocess.py, visualizer.py etc  
