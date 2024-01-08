@@ -1,68 +1,39 @@
-import argparse
+#!/usr/bin/env python3
+import os
 import yaml
 
-# import os, subprocess
+
+def get_config_file(config_file):
+    """
+    loads the config.yaml file safely
+    why yaml file: you can customize the structure the way you want
+    """
+    with open(config_file, 'r') as f:
+        return yaml.safe_load(f)
+
+
+def create_directory(directory):
+    """
+    This will create the directory as listed in the yaml file
+    """
+    for dir in directory:
+        try:
+            os.makedirs(dir)
+            print(f"directory {dir} created")
+        except OSError as e:
+            print(e)
+            # if e.errno != os.errno.EEXIST:
+            # raise  # Re-raise exception
+            print(f"Directory '{directory}' already exists.")
+
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("folderName", help="- Provide folder name")
 
-    args = parser.parse_args()
+    config_file = 'config.yaml'
+    directory = create_directory(config_file).get('directory', [])
 
-    project_name = args.folderName
-    os.chdir('../')
-    os.mkdir(project_name)
-    os.chdir(f"{project_name}")
+    if not directory:
+        print("seems to be an error in the yaml file, check again!")
+    else:
+        print("folder structure created.. happy coding!!")
 
-    # read YAML file
-
-    # creation of directories
-    dirs = [
-        os.path.join("data", "raw"),
-        os.path.join("data", "processed"),
-        os.path.join("data", "train"),
-        os.path.join("data", "test"),
-        os.path.join("data", "validate"),
-        "notebook",
-        # os.path.join("notebook", "nb_data"),
-        os.path.join("notebook", "nb_report"),
-        os.path.join("notebook", "nb_model"),
-        os.path.join("notebook", "nb_research"),
-        "models",
-        "src",
-        "docs",
-        "conf",
-        "reports",
-        "logs",
-        "plots"
-    ]
-
-    ## creation of files
-    files = [
-        "README.md",
-        "Makefile",
-        "requirements.txt",
-        ".gitignore",
-        os.path.join("conf", "params.yaml"),
-        os.path.join("conf", "conf.yaml"),
-        os.path.join("src", "__init__.py"),
-        os.path.join("notebook", f"{project_name}_EDA_ML_Experiments.ipynb"),
-        os.path.join("notebook", f"{project_name}.ipynb")
-    ]
-
-    for _dir_ in dirs:
-        os.makedirs(_dir_, exist_ok=True)
-        pass
-
-    for _file_ in files:
-        with open(_file_, "w") as f:
-            pass
-
-    print("folder structure created.. happy coding!!")
-    print("creating virtual env")
-
-    # create virtualenv if we have it installed 
-    # virtualenv --version should return a value
-    # os.chdir('../')
-    # os.chdir(f"{project_name}")
-    # subprocess.run(["python3", "-m", "venv", "venv"])

@@ -1,32 +1,67 @@
-dir:
+directory:
+  # support for data version control
+  - .dvc:
+
+  # if you plan to use docker container
+  - docker:
+    - Dockerfile
+
+  # basic ML development files
+  - src:
+    - __init__.py
+    - data_pipeline.py
+    - data_processing.py
+    - feature_engineering.py
+    - model_training.py
+    - evaluation.py
+    - utils.py
+
+  # unit testing
+  - tests:
+
+  # you can omit some files but typically 
+  # these are the ones used
   - data:
       - raw
       - processed
       - train
       - test
       - validate
-  - plot
-  - logs
-  - reports
-  - docs
-  - models
 
+ # to save any plots as .png
+  - plot:
+
+ # all logs files
+ # write a seperate script for rotating
+  - logs:
+
+# storing all your research and documentation
+  - docs:
+  - models:
+
+# model config files
   - conf:
-    - params.yaml
+    - hyperparams.yaml
     - conf.yaml
+    - dagshub.yaml
 
+# usually we start with .ipynb
+# all your exploration can be stored 
+# under the same project right at the start 
+# of your ML project
   - notebook:
     - nb_data
     - nb_report
     - nb_model
-    - nb_research
-
-  - notebook_file:
-    - eda_ml_experiment.ipynb
-    - project_name.ipynb
+    - nb_documentation
+    - notebook_file:
+      - eda_ml_experiment.ipynb
+      - project_name.ipynb
 
   - files:
+    - setup.py
     - README.md
     - Makefile
     - requirements.txt
     - .gitignore
+    - LICENSE

@@ -1,0 +1,6 @@
+directories:
+  - dir1:
+      - .dvc
+  - src:
+      - init.py
+      - data_processing.py
