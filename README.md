@@ -6,14 +6,51 @@ All ML projects start with basic understanding of data and experiement with Jupy
 
 # About this project
 
-I use a specific ML project structure. It helps me focus on getting started immediately on any project. It contains a simple python script and a configurable folder structure in YAML format.
-This is extemely simple to use command line script.
+Using a standard structure helps you focus on getting started immediately on any machine learning project.   
+
+I tend to start using jupyter notebook to get an understanding of the data, the story it tries to tell, capturing all the details including references, links, tips and tricks, latest researech. These are important information to store during the initial days of your research on the project.
 
 
-# Project directories
+
+
+# Project Structure
 
 The project structure is quite simple actually
 ![image](https://github.com/rvbug/cookie-ml/assets/10928536/e0785d48-c21b-42c6-84a7-de211e6687ca)
+
+
+# Usage
+
+It contains a simple python script and a configurable folder structure in YAML format.
+Extemely simple to use command line script.
+
+```python
+python3 main.py --h
+
+# usage: ML Cookie Cutter [-h] [--n N] [--p P] [--c C] [--v]
+
+# Creates ML project cookie cutter structure
+
+#optional arguments:
+#  -h, --help         show this help message and exit
+#  --n N, --name N    Name of the directory to be created, default = ml-cookie-project
+#  --p P, --path P    provide the path where, default is $HOME dir
+#  --v, --venv        create a virtual env. [ignore if you are already on a virtual env]
+
+# Enjoy and happy coding
+
+## Arguments 
+
+```
+| short format | long format | description |
+| --- | --- | --- |
+| --h | --help | displays help |
+| --n | --name | (optional) provide project name, defaults to "ml-cookie-cutter"  |
+| --p | --path | (optional) provide project location, defaults to $HOME directory |
+| --v | --venv | (optional) create virtual env. <br>Activate using `source {venv_path}/bin/activate` |
+
+
+
 
 
 # Reference 
