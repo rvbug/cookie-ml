@@ -26,7 +26,7 @@ def parse_args():
     parser.add_argument("--v", "--venv", action="store_true", help="create a virtual env. "
                                                                    "[ignore if you are already on a virtual env]",
                         required=False)
-    parser.add_argument("--rust", help="support rust structure for ML development in rust")
+    # parser.add_argument("--rust", help="support rust structure for ML development in rust")
     return parser.parse_args()
 
 
