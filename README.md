@@ -1,88 +1,14 @@
-# Preface
-
->Currently working on quick guide to **make**, **Makefile** and other tools like virtualenv just enough to quickly get your running at full speed.
-I will be sharing it shortly
-
 
 # Introduction
 
+All ML projects start with basic understanding of data and experiement with Jupyter notebook (mostly) and then gradually moving to a proper IDE, writing/reusing helper functions, seperating data_pipline code with data processing etc. It is chaotic for beginners but that is the beauty of it.
 
->You have trained your model using `jupyter notebook` / `vscode` / `pycharm`.   
-Getting your code into production is a whole new challenge unlike any other you have done before.    
-It is chaotic but that is the beauty of it
 
 # About this project
 
-> Helps you to build a project struture easily and is quite flexible.  
-Developed in Python 3, you can use it via make or calling python script  
-Most importantly, it is extremely simple to use!
+I use a specific ML project structure. It helps me focus on getting started immediately on any project. It contains a simple python script and a configurable folder structure in YAML format.
+This is extemely simple to use command line script.
 
-# Approches
-
-There are couple of ways you can use this.
-
-1. make & Makefile  
-
-2. run script directly.
-
-
-## Approach 1
-
-### Prerequisites
- The prerequisites is to have a virtual environment created. There are 3 ways which can be done
- 
- - **`conda`** - easier but works well but only during experimental phase of your project
- - **`virtualenv`** - was popular once and works well with *pip*
- - **`pipenv`** - is the most preferred method as it combines `pip` & `virtualenv`  
-  
-<br>
-          
-> Once you activate the virtual env, follow the below steps :-
-<br>
-
-*`make`* is a utility and a very popluar for automating the compilation of C/C++ programs and their dependencies.
-
-`make` runs the scripts mentioned in `Makefile`
-
-After you clone this repo, call `make` from command line, by default it will show all the arguments you can use
-<p>
-<img src="https://github.com/rvbug/cookie-ml/blob/main/make.png">
-
-
-> To get help use
-```python
-make help
-```          
-          
-#### The order of execution is as follows :
-
-> **Install libraries mentioned in `requirements.txt`**
-
-```python
-make install_libraries
-``` 
-
-> **To create the entire struture with main folder name as `ml-project`**
-```python
-make build
-```
-
-> **To clean cached folders**
-```python
-make clean
-```
-
-## Approach 2
-
-### Prerequisites
-  The only prerequisites is to have python 3.x installed
-
-> If you want a simpler route, just use the below command for creating the folder of your choice
-folder_name is a required parameter and can be given any name as long as that folder does not exists.
-
-```python
-python template.py ml-project
-```
 
 # Project Structure
 
