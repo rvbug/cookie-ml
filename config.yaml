@@ -56,7 +56,7 @@
     - nb_report
     - nb_model
     - nb_documentation
-    - notebook_file:
+    - notebook_files:
       - eda_ml_experiment.ipynb
       - project_name.ipynb
 
