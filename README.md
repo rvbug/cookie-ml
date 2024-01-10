@@ -50,6 +50,10 @@ python3 main.py --h
 | --v | --venv | (optional) create virtual env. <br>Activate using `source {venv_path}/bin/activate` |
 
 
+# Future
+- setup tools
+- Support for Rust  
+
 
 
 
