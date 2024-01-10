@@ -22,11 +22,11 @@
   # you can omit some files but typically 
   # these are the ones used
   - data:
-      - raw
-      - processed
-      - train
-      - test
-      - validate
+    - raw:
+    - processed:
+    - train:
+    - test:
+    - validate:
 
  # to save any plots as .png
   - plot:
@@ -52,10 +52,10 @@
 # under the same project right at the start 
 # of your ML project
   - notebook:
-    - nb_data
-    - nb_report
-    - nb_model
-    - nb_documentation
+    - nb_data:
+    - nb_report:
+    - nb_model:
+    - nb_documentation:
     - notebook_files:
       - eda_ml_experiment.ipynb
       - project_name.ipynb
