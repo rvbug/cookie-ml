@@ -90,8 +90,8 @@ def create_directories(project_path, config):
             if key == "files":
                 for file in value:
                     file_path = os.path.join(project_path, file)
-                with open(file_path, "w"):
-                    pass
+                    with open(file_path, "w"):
+                        pass
             else:
                 sub_items = os.path.join(project_path, key)
                 os.makedirs(sub_items, exist_ok=True)
