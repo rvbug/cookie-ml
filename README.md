@@ -1,12 +1,16 @@
 
+<p align="center"> 
+<img height="50" widhth="50" src="https://github.com/rvbug/cookie-ml/assets/10928536/4f22cc2e-309f-4650-9695-0e855a2dd638" >
+</p>
 
+---
 
-[![github](https://img.shields.io/badge/GitHub-rvbug-181717.svg?style=flat&logo=github)](https://github.com/rvbug)
-[![twitter](https://img.shields.io/badge/Twitter-@rvbugged-00aced.svg?style=flat&logo=twitter)](https://twitter.com/rvbugged)
-[![website](https://img.shields.io/badge/Website-rvbug-5087B2.svg?style=flat&logo=telegram)](https://rvbug.github.io)   
-<br><br>
-[![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
-[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
+<p align="center"> 
+
+  <img src="https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white"> 
+  <img src="https://img.shields.io/badge/linting-pylint-yellowgreen">
+</p>
+
 
 # Introduction
 
