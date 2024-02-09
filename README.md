@@ -6,6 +6,7 @@
 [![website](https://img.shields.io/badge/Website-rvbug-5087B2.svg?style=flat&logo=telegram)](https://rvbug.github.io)   
 <br><br>
 [![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 
 # Introduction
 
