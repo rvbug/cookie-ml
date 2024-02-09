@@ -1,4 +1,12 @@
 
+
+
+[![github](https://img.shields.io/badge/GitHub-rvbug-181717.svg?style=flat&logo=github)](https://github.com/rvbug)
+[![twitter](https://img.shields.io/badge/Twitter-@rvbugged-00aced.svg?style=flat&logo=twitter)](https://twitter.com/rvbugged)
+[![website](https://img.shields.io/badge/Website-rvbug-5087B2.svg?style=flat&logo=telegram)](https://rvbug.github.io)   
+<br><br>
+[![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
+
 # Introduction
 
 All ML projects start with basic understanding of data and experiement with Jupyter notebook (mostly) and then gradually moving to a proper IDE, writing/reusing helper functions, seperating data_pipline code with data processing etc. It is chaotic for beginners but that is the beauty of it.
