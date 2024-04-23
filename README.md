@@ -64,8 +64,7 @@ python3 main.py --h
 
 
 # Future
-- setup tools
-- Support for Rust  
+- Rust support  
 
 
 
