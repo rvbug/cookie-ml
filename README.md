@@ -64,7 +64,7 @@ python3 main.py --h
 
 
 # Future
-- Rust support  
+- Rust support using Clap crate
 
 
 
