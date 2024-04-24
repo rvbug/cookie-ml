@@ -32,7 +32,7 @@ The project structure is quite simple actually
 ![image](https://github.com/rvbug/cookie-ml/assets/10928536/e0785d48-c21b-42c6-84a7-de211e6687ca)
 
 
-# Usage
+# Python Usage
 
 It contains a simple python script and a configurable folder structure in YAML format.
 Extemely simple to use command line script.
@@ -52,9 +52,25 @@ python3 main.py --h
 
 # Enjoy and happy coding
 
-## Arguments 
+```
+
+
+# Rust Usage
+
+```rust
+main.rs --h
+
+// Usage: cookie-ml [OPTIONS]
+
+// Options:
+//   -n, --name <NAME>  name of the ML project - default is ml-cookie-project [default: ml-cookie-project]
+//   -p, --path <PATH>  path of the ML project [default: $HOME]
+//   -v, --venv <VENV>  virtual env
+//   -h, --help         Print help
 
 ```
+
+## Arguments 
 | short format | long format | description |
 | --- | --- | --- |
 | --h | --help | displays help |
