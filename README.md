@@ -19,10 +19,16 @@ All ML projects start with basic understanding of data and experiement with Jupy
 
 # About this project
 
-Using a standard structure helps you focus on getting started immediately on any machine learning project.   
+Using a standard structure helps you focusing on getting started immediately on any machine learning project.
 
 I tend to start using jupyter notebook to get an understanding of the data, the story it tries to tell, capturing all the details including references, links, tips and tricks, latest researech. These are important information to store during the initial days of your research on the project.
 
+This repo helps you to setup your project and folder structure via a script.
+
+# IDE
+My prefered IDE is [Neovim](https://neovim.io/), if you like to configure for Rust developement, take a look at my [Repo](https://github.com/rvbug/neovim)
+
+![image](https://github.com/rvbug/cookie-ml-rust/assets/10928536/97631e0a-66a1-4414-badb-a6cdb94f62a5)
 
 
 
