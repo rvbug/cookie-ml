@@ -28,9 +28,6 @@ This repo helps you to setup your project and folder structure via a script.
 # IDE
 My prefered IDE is [Neovim](https://neovim.io/), if you like to configure for python developement, take a look at my [Repo](https://github.com/rvbug/neovim)
 
-![image](https://github.com/rvbug/cookie-ml/assets/10928536/3d4ade9f-848d-4090-82a1-1bccf823ca12)
-
-
 # Project Structure
 
 The project structure is quite simple actually
